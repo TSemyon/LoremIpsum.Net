@@ -1,0 +1,34 @@
+@import "_nullstyle";
+@import "_fonts";
+@import "_variables";
+@import "./header/_header";
+@import "./main/_main.scss";
+@import "./content/_content";
+@import "./footer/_footer";
+
+[class*="__container"] {
+   max-width: 1170px;
+   margin: 0 auto;
+   padding: 0px 15px;
+   box-sizing: content-box;
+}
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+.main {
+   flex: 1 1 100%;
+   position: relative;
+   z-index: 1;
+}
+
+// Media //
+
+@media (max-width: 1920px) {
+   .main-block__img img {
+      object-position: right;
+   }
+}
+
+

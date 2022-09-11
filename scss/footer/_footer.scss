@@ -1,0 +1,134 @@
+@import "../variables";
+
+// Footer //
+
+.footer {
+   padding: 30px 0px;
+   font-family: inherit;
+   background: #3D4050;
+   font-size: 13px;
+   line-height: 1.23;
+   color:$cwhite;
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+}
+.footer {
+
+   &__container {
+   }
+
+   &__inc {
+   }
+
+   &__contact {
+   }
+}
+
+.inc-block {
+
+   &__text {
+   }
+}
+.icon-email {
+   color:$cblueb;
+}
+.icon-VK {
+   color:$cblueb; 
+}
+a:hover {
+   * {
+      color: $cwhite;
+   }
+}
+
+.contact-block {
+   display: flex;
+   &__item {
+      margin: 0px 0px 0px 35px;
+   }
+   & a {
+      display: flex;
+      align-items: center;
+      font-family: inherit;
+      color: $cwhite;
+      & span {
+         font-size: 20px;
+         padding: 0px 10px 0px 0px;
+      }
+      &:hover {
+         color: $cbluel;
+      }
+   } 
+}
+
+.pay-block {
+   display: flex;
+   padding: 0px 42px 0px 42px;
+   border-left: 1px solid #C3C3C3;
+   border-right: 1px solid #C3C3C3;
+   &__item:not(:last-child) {
+      margin: 0px 35px 0px 0px;
+   }
+   & a {
+      display: flex;
+      align-items: center;
+      font-family: inherit;
+      color: #C3C3C3;
+      & span {
+         font-size: 20px;
+         padding: 0px 10px 0px 0px;
+      }
+      &:hover {
+         color: $cbluel;
+      }
+   }
+}
+.icon-QIWI {
+   color:$cblueb;
+}
+.icon-Yandex {
+   color:$cblueb;
+}
+.icon-Web {
+   color:$cblueb;
+}
+
+@media (max-width: 1180px) {
+   .footer {
+      display: flex;
+      &__container {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+         .contact-block {
+            margin: 0px 0px 30px 0px;
+            &__item:not(:last-child) {
+               margin: 0px 35px 0px 0px;
+            }
+         }
+         .pay-block {
+            margin: 0px 0px 15px 0px;
+         }
+      }
+   }
+   .inc-block {
+      order:1;
+   }
+   .pay-block {
+      padding: 0px 0px 0px 0px;
+      border-left: none;
+      border-right: none;
+   }
+}
+@media (max-width: 428.98px) {
+   .footer {
+      font-size: 12px;
+   }
+}
+
+
+
